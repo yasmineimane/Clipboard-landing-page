@@ -1,0 +1,144 @@
+@import url('https://fonts.googleapis.com/css2?family=Bai+Jamjuree:wght@400;600&display=swap');
+
+*{
+    box-sizing: border-box;
+}
+
+:root{
+    --Strong-Cyan: hsl(171, 66%, 44%);
+    --Light-Blue: hsl(233, 100%, 69%);
+    --Dark-Grayish-Blue: hsl(210, 10%, 33%);
+    --Grayish-Blue: hsl(201, 11%, 66%);
+}
+
+body{
+    color: var(--Dark-Grayish-Blue);
+    font-family: 'Bai Jamjuree', sans-serif;
+    margin: 0;
+    text-align: center;
+}
+header{
+    background-image: url(./images/bg-header-desktop.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 80px 0 20px;
+}
+img{
+    max-width: 100%;
+}
+p{
+    color: var(--Grayish-Blue);
+    line-height: 1.5;
+}
+.cen{
+    text-align: left;
+    margin-left: 90px;
+
+}
+.cen p{
+    margin-right: 100px;
+}
+.container{
+    padding: 0 20px;
+    margin: 30px auto;
+    max-width: 100%;
+    width: 1200px;
+}
+
+.container-small{
+    width: 700px;
+}
+
+section{
+    padding: 30px 0;
+}
+.flex{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.flex > *{
+    flex: 1;
+    padding: 10px;
+}
+
+.m4{
+    margin: 100px auto;
+}
+.btn1, .btn2{
+    background-color: var(--Strong-Cyan);
+    border: none;
+    border-radius: 50px;
+    color: #fff;
+    font-family: 'Bai Jamjuree', sans-serif;
+    font-weight: 600;
+    font-size: 16px;
+    padding: 15px 35px;
+    margin: 15px 5px;
+}
+
+.btn1{
+    background-color: var(--Strong-Cyan);
+    box-shadow: 0 4px hsl(171, 68%, 36%);
+}
+
+.btn2{
+    background-color: var(--Light-Blue);
+    box-shadow: 0 4px hsl(233, 71%, 61%);
+}
+
+footer{
+    background-color: hsl(0, 0%, 93%);
+}
+
+footer .image{
+    width: 60px;
+}
+
+footer ul{
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0;
+    list-style-type: none;
+}
+
+footer .container{
+    margin-bottom: 0;
+}
+footer ul a{
+    color: var(--Dark-Grayish-Blue);
+    text-decoration: none;
+}
+
+footer .links{
+    flex: 3;
+}
+
+footer .links li{
+    padding: 10px;
+    margin-right: 40px;   
+}
+footer .social li{
+    margin: 0 5px;
+}
+
+footer .social a{
+    font-size: 24px;
+    margin-right: 5px;
+}
+
+@media (max-width: 768px){
+    .flex{
+        flex-direction: column;
+    }
+
+    footer .links{
+        flex-direction: column;
+    }
+
+    footer .links li{
+        padding: 10px;
+        margin-right: 0px;
+    }
+}
