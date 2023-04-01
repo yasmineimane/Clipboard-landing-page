@@ -33,10 +33,6 @@ p{
 .cen{
     text-align: left;
     margin-left: 90px;
-
-}
-.cen p{
-    margin-right: 100px;
 }
 .container{
     padding: 0 20px;
@@ -76,13 +72,19 @@ section{
     font-size: 16px;
     padding: 15px 35px;
     margin: 15px 5px;
+    cursor: pointer;
 }
 
 .btn1{
     background-color: var(--Strong-Cyan);
     box-shadow: 0 4px hsl(171, 68%, 36%);
 }
-
+.btn1:hover{
+    opacity: 0.8;
+}
+.btn2:hover{
+    opacity: 0.8;
+}
 .btn2{
     background-color: var(--Light-Blue);
     box-shadow: 0 4px hsl(233, 71%, 61%);
